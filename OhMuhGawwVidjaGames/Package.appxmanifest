@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="22441SeanDunford.MayanPong" Publisher="CN=B5769CF2-7EBD-4609-A847-2091A447EABB" Version="1.1.1.18" />
+  <Properties>
+    <DisplayName>Mayan Pong</DisplayName>
+    <PublisherDisplayName>Sean_Dunford</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2.1</OSMinVersion>
+    <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="OhMuhGawwVidjaGames.App">
+      <VisualElements DisplayName="Mayan Pong" Logo="Content\logo150150.png" SmallLogo="Content\logo3030.png" Description="OhMuhGawwVidjaGames" ForegroundText="dark" BackgroundColor="#4CF6FF" ToastCapable="true">
+        <LockScreen Notification="badge" BadgeLogo="Content\logo2424.png" />
+        <DefaultTile ShowName="allLogos" WideLogo="Content\logo310150.png" ShortName="mAYpoCALYpsE" />
+        <SplashScreen Image="Content\620300SPLASH.png" BackgroundColor="#4CF6FF" />
+      </VisualElements>
+      <Extensions>
+        <Extension Category="windows.backgroundTasks" StartPage="GamePage.xaml">
+          <BackgroundTasks>
+            <Task Type="controlChannel" />
+          </BackgroundTasks>
+        </Extension>
+      </Extensions>
+    </Application>
+  </Applications>
+</Package>
